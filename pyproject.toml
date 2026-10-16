@@ -1,0 +1,5 @@
+[project]
+name = "shipit"
+version = "0.4.0"
+[project.scripts]
+shipit = "shipit.cli:main"
