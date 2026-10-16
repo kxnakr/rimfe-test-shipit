@@ -1,11 +1,11 @@
 # CLI reference
 
 ```
-shipit DIRECTORY [--env staging|production] [--dry-run] [--concurrency N]
+shipit DIRECTORY [--env staging|production] [--dry-run] [--parallel N]
 ```
 
 | Flag | Default | Description |
 | --- | --- | --- |
 | `--env` | `staging` | Target environment. |
 | `--dry-run` | off | Print what would be uploaded without uploading. |
-| `--concurrency` | `4` | Number of parallel uploads. |
+| `--parallel` | `8` | Number of parallel uploads. |
