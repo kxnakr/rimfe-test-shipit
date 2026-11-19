@@ -9,7 +9,7 @@ def main() -> None:
     parser.add_argument("directory", help="Folder to upload.")
     parser.add_argument("--env", choices=["staging", "production"], default="staging")
     parser.add_argument("--dry-run", action="store_true", help="Print what would be uploaded.")
-    parser.add_argument("--concurrency", type=int, default=6, help="Parallel uploads.")
+    parser.add_argument("--concurrency", type=int, default=5, help="Parallel uploads.")
     args = parser.parse_args()
     token = os.environ.get("SHIPIT_TOKEN")
     if not token:
